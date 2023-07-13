@@ -1,0 +1,79 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.file-input {
+  position: relative;
+  display: inline-block;
+}
+
+.file-input input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.file-input label {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-input label:hover {
+  background-color: #e0e0e0;
+}
+
+.file-input label::after {
+  content: attr(data-file-name);
+  margin-left: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.checkboxes-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.checkbox-block {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+form {
+  display: flex;
+}
+
+textarea {
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+}
